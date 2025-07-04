@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Simple E-Commerce</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background-color: #f8f8f8;
+    }
+
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      font-size: 24px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin-left: 20px;
+      font-size: 16px;
+    }
+
+    .hero {
+      background: url('https://source.unsplash.com/1600x400/?shopping') no-repeat center/cover;
+      height: 400px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      font-size: 36px;
+      font-weight: bold;
+      text-shadow: 2px 2px 8px #000;
+    }
+
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 40px;
+    }
+
+    .product {
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      overflow: hidden;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .product img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .product h3 {
+      margin: 15px 0 10px;
+      font-size: 20px;
+    }
+
+    .product p {
+      color: #888;
+    }
+
+    .product button {
+      margin-top: 10px;
+      padding: 10px 20px;
+      background-color: #333;
+      color: white;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+      transition: background 0.3s;
+    }
+
+    .product button:hover {
+      background-color: #555;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #333;
+      color: white;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Baron Thread</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Products</a>
+      <a href="#">Cart</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <div class="hero">
+    Welcome to your own clothing brand
+  </div>
+
+  <section class="products">
+    <div class="product">
+      <img src="https://1drv.ms/i/c/2407b0337dc28da6/EZlCFU3mgWdOnp8T6soOQskB6fz4ErmSNbH76sLzT-bmpg?e=zdeadG"/>
+      <h3>BlurMatrix</h3>
+      <p>499</p>
+      <button>purchase</button>
+    </div>
+    <div class="product">
+      <img src="https://1drv.ms/i/c/2407b0337dc28da6/EZlCFU3mgWdOnp8T6soOQskB6fz4ErmSNbH76sLzT-bmpg?e=Black shirt"/>
+      <h3>BlueMatrix</h3>
+      <p>499</p>
+      <button>Purchace</button>
+    </div>
+    <div class="product">
+      <img src="https://source.unsplash.com/300x200/?headphones" alt="Product 3" />
+      <h3>Wireless Headphones</h3>
+      <p>$99.99</p>
+      <button>Add to Cart</button>
+    </div>
+    <div class="product">
+      <img src="https://source.unsplash.com/300x200/?jacket" alt="Product 4" />
+      <h3>Winter Jacket</h3>
+      <p>$59.99</p>
+      <button>Add to Cart</button>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 ShopEasy. All rights reserved.
+  </footer>
+</body>
+</html>
